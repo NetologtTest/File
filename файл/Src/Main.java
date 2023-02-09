@@ -68,12 +68,10 @@ public class Main {
         sum.append(icons);
 
         try (FileWriter writer = new FileWriter("D:\\ Games\\temp\\ temp.txt", false)) {
-            for (int i = 0; i < sum.length(); i++) {
-                writer.write(sum.toString() + " Оно работает");
-            }
-
-
+      
+            writer.write(sum.toString() + " Оно работает");
             writer.flush();
+     
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
